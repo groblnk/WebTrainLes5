@@ -18,6 +18,11 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     font-weight: bold;
 }
+
+h1,h2,h3{
+    text-transform: uppercase;
+}
+
 ul,li{
     padding: 0;
     margin: 0;
@@ -35,17 +40,94 @@ button{
     display: flex;
 }
 
-.upcase{
-    text-transform: uppercase;
-}
-
 .jcsb{
     justify-content: space-between;
+}
+
+.jcc{
+    justify-content: center;
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
-    /*border: 2px solid red;*/
-    align-items: center; /*центруем по вертикали*/
+    /*align-items: center;*/
+    justify-content:normal;
+}
+
+.header {
+    background: #184c6b;
+    color: #fff;
+    height: 667px;
+    /*display: block;*/
+}
+
+.header__crutch{
+    height: 22px;
+    width: 150px;
+    margin: 0 auto 0 auto;
+    padding-top: 72px;
+}
+
+.header__logo{
+    /*!*height: 22px;*!*/ /*Напрямую не прокатило, а вот обернув в div, получилось*/
+    /*width: 150px;*/
+    /*margin: 0 auto 0 auto;*/
+    /*display: block;*/
+    /*padding-top: 100px;*/
+}
+
+h1{
+    width: 656px;
+    margin: 200px auto 0 auto;
+
+    font-size: 28px;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.header__contact{
+    height: 56px;
+    width: 216px;
+    margin: 21px auto 0 auto;
+    display: block;
+
+    background: #184c6b;
+    border: 1px solid white;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 17px;
+
+    text-align: center;
+}
+
+h2{
+    /*height:300px;*/
+    width: 656px;
+    margin: 107px auto 0 auto;
+
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.about__info{
+    width: 800px;
+}
+
+h3{
+
+}
+
+.think_callme{
+    /*height:300px;*/
+    width: 500px;
+    margin: 107px auto 0 auto;
+
+    font-size: 12px;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
